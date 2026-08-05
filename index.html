@@ -28,3 +28,47 @@
   </script>
 </body>
 </html>
+let pontos = 0;
+
+const alvo = document.getElementById("alvo");
+
+alvo.addEventListener("click", () => {
+    pontos++;
+    document.getElementById("pontos").textContent = pontos;
+
+    alvo.style.left = Math.random() * 80 + "%";
+    alvo.style.top = Math.random() * 80 + "%";
+});
+<h1>Pontos: <span id="pontos">0</span></h1>
+
+<div id="jogo">
+    <img id="alvo" src="alvo.png">
+</div>
+
+<script src="script.js"></script>
+#jogo {
+    width: 800px;
+    height: 500px;
+    background: #222;
+    position: relative;
+}
+
+#alvo {
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: crosshair;
+}
+let pontos = 0;
+
+const alvo = document.getElementById("alvo");
+
+alvo.addEventListener("click", () => {
+    pontos++;
+
+    document.getElementById("pontos").textContent = pontos;
+
+    alvo.style.left = Math.random() * 80 + "%";
+    alvo.style.top = Math.random() * 80 + "%";
+});
