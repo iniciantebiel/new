@@ -1,44 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-    }
-    button {
-      padding: 10px 20px;
-    }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Olá, mundo!</h1>
-  <p>Este é o meu primeiro site.</p>
 
-  <button onclick="mensagem()">Clique aqui</button>
-
-  <script>
-    function mensagem() {
-      alert("Bem-vindo ao meu site!");
-    }
-  </script>
-</body>
-</html>
-let pontos = 0;
-
-const alvo = document.getElementById("alvo");
-
-alvo.addEventListener("click", () => {
-    pontos++;
-    document.getElementById("pontos").textContent = pontos;
-
-    alvo.style.left = Math.random() * 80 + "%";
-    alvo.style.top = Math.random() * 80 + "%";
-});
 <h1>Pontos: <span id="pontos">0</span></h1>
 
 <div id="jogo">
@@ -46,6 +13,9 @@ alvo.addEventListener("click", () => {
 </div>
 
 <script src="script.js"></script>
+
+</body>
+</html>
 #jogo {
     width: 800px;
     height: 500px;
